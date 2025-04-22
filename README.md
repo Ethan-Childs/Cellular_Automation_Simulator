@@ -1,4 +1,4 @@
-# Cellular Automation Simulator
+# Cellular Automaton Simulator
 
 **Author**: Ethan Childs  
 **Language**: Python  
