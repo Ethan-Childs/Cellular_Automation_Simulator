@@ -5,7 +5,7 @@
 **Project Type**: Multiprocessing Matrices
 
 **Project Overview**
-This program simulates a grid of cells over 100 iterations using defined transformation rules based on neighbor values. 
+This program simulates a grid of cells over iterations using defined transformation rules based on neighbor values. 
 It includes both serial and multiprocessing (parallel) implementations for speed optimization.
 I have included 100 6x6 matrices in the test_matrices folder but this program can run any size matrices just take note
 the large the size the longer the simulation takes.
@@ -14,7 +14,7 @@ wrapping with Modulo Arithmetic.
 
 **Important Features**
 - Reads input matrix from file
-- Simulates 100 iterations of cell behavior
+- Simulates iterations of cell behavior
 - Handles edge wrap-around (toroidal grid)
 - Applies complex transformation logic (Fibonacci, powers of 2, prime checks)
 - Supports multiprocessing with customizable number of threads
