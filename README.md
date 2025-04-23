@@ -22,6 +22,7 @@ wrapping with Modulo Arithmetic.
 - Displays execution time
 
 **Conditions for the Cells**
+
 For each cell of the matrix, sum up the neighboring cells using the following rules:
 Neighboring cells that are “Healthy O Cells” are equal to three (+3).
 Neighboring cells that are “Weakened O Cells” are equal to one (+1).
