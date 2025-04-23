@@ -5,6 +5,7 @@
 **Project Type**: Multiprocessing Matrices
 
 **Project Overview**
+
 This program simulates a grid of cells over iterations using defined transformation rules based on neighbor values. 
 It includes both serial and multiprocessing (parallel) implementations for speed optimization.
 I have included 100 6x6 matrices in the test_matrices folder but this program can run any size matrices just take note
