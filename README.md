@@ -16,7 +16,7 @@ wrapping with Modulo Arithmetic.
 - Reads input matrix from file
 - Simulates iterations of cell behavior
 - Handles edge wrap-around (toroidal grid)
-- Applies complex transformation logic (Fibonacci, powers of 2, prime checks)
+- Applies transformation logic (Fibonacci, powers of 2, prime checks)
 - Supports multiprocessing with customizable number of threads
 - Prints matrix to terminal and writes to file
 - Displays execution time
