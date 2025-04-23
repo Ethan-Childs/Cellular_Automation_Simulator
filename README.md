@@ -22,37 +22,35 @@ wrapping with Modulo Arithmetic.
 - Displays execution time
 
 **Conditions for the Cells**
-1. For each cell of the matrix, sum up the neighboring cells using the following rules:
-    a. Neighboring cells that are “Healthy O Cells” are equal to three (+3).
-    b. Neighboring cells that are “Weakened O Cells” are equal to one (+1).
-    c. Neighboring cells that are “dead” are equal to zero (0).
-    d. Neighboring cells that are “Weakened X Cells” are equal to negative one (-1).
-    e. Neighboring cells that are “Healthy X Cells” are equal to negative three (-3).
+For each cell of the matrix, sum up the neighboring cells using the following rules:
+Neighboring cells that are “Healthy O Cells” are equal to three (+3).
+Neighboring cells that are “Weakened O Cells” are equal to one (+1).
+Neighboring cells that are “dead” are equal to zero (0).
+Neighboring cells that are “Weakened X Cells” are equal to negative one (-1).
+Neighboring cells that are “Healthy X Cells” are equal to negative three (-3).
 
-2. If the current cell is a healthy ‘O’ cell
-   a. If the sum of neighbor values is a member of the Fibonacci Sequence, the cell immediately dies.
-   b. Otherwise, if the sum of neighbor values is less than 12, then it becomes a weakened ‘o’ cell.
-   c. Otherwise, the cell remains unchanged.
+If the current cell is a healthy ‘O’ cell
+- If the sum of neighbor values is a member of the Fibonacci Sequence, the cell immediately dies.
+- Otherwise, if the sum of neighbor values is less than 12, then it becomes a weakened ‘o’ cell.
+- Otherwise, the cell remains unchanged.
 
-3. If the current cell is a weakened ‘o’ cell
-   a. If the sum of neighbor values is less than 0, the cell immediately dies.
-   b. Otherwise, if the sum of neighbor values is greater than 6, then it becomes a healthy ‘O’ cell.
-   c. Otherwise, the cell remains unchanged.
+If the current cell is a weakened ‘o’ cell
+- If the sum of neighbor values is less than 0, the cell immediately dies.
+- Otherwise, if the sum of neighbor values is greater than 6, then it becomes a healthy ‘O’ cell.
+- Otherwise, the cell remains unchanged.
 
-4. If the current cell is a dead cell
-   a. If the sum of neighbor values is a power of 2, the cell becomes a weakened ‘o’ cell.
-   b. Otherwise, if the absolute value of the sum of neighbor values is a power of 2, the cell becomes
-   a weakened ‘x’ cell.
-   c. Otherwise, the cell remains unchanged.
+If the current cell is a dead cell
+- If the sum of neighbor values is a power of 2, the cell becomes a weakened ‘o’ cell.
+- Otherwise, if the absolute value of the sum of neighbor values is a power of 2, the cell becomes a weakened ‘x’ cell.
+- Otherwise, the cell remains unchanged.
 
-5. If the current cell is a weakened ‘x’ cell
-   a. If the sum of neighbor values is greater than or equal to 1, the cell immediately dies.
-   b. Otherwise, if the sum of neighbor values is less than -6, then it becomes a healthy ‘X’ cell.
-   c. Otherwise, the cell remains unchanged.
+If the current cell is a weakened ‘x’ cell
+- If the sum of neighbor values is greater than or equal to 1, the cell immediately dies.
+- Otherwise, if the sum of neighbor values is less than -6, then it becomes a healthy ‘X’ cell.
+- Otherwise, the cell remains unchanged.
 
-6. If the current cell is a healthy ‘X’ cell
-   a. If the absolute value of the sum of neighbor values is a prime number, the cell immediately dies.
-   b. Otherwise, if the sum of neighbor values is greater than -12, then it becomes a weakened ‘x’
-   cell.
-   c. Otherwise, the cell remains unchanged.
+If the current cell is a healthy ‘X’ cell
+- If the absolute value of the sum of neighbor values is a prime number, the cell immediately dies.
+- Otherwise, if the sum of neighbor values is greater than -12, then it becomes a weakened ‘x’ cell.
+- Otherwise, the cell remains unchanged.
 
